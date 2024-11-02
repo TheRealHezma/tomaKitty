@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Button } from 'react-native';
+import { useNavigation } from 'expo-router';
 
 const TicTacToe = () => {
   const [board, setBoard] = useState(Array(9).fill(null));
@@ -58,6 +59,8 @@ const TicTacToe = () => {
         </Text>
       )}
       <Button title="Restart Game" onPress={resetGame} />
+      {/* New Button to Navigate to Test Page */}
+      <Button title="Go to Test Page" onPress={() => navigation.navigate('index2')} />
     </View>
   );
 };
