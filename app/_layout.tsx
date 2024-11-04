@@ -4,7 +4,8 @@ export default function RootLayout() {
   return (
     <Stack>
       <Stack.Screen name="index" />
-      <Stack.Screen name="index2" />
+      <Stack.Screen name="ticTacToe" />
+      <Stack.Screen name="hangMan" />
     </Stack>
   );
 }
